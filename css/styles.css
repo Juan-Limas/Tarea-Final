@@ -663,20 +663,34 @@ footer .redes-sociales a:hover {
     position: relative;
     height: 260px;
     overflow: hidden;
+    isolation: isolate;
 }
 
 /* Fondo ampliado que cubre los lados */
 #carruselJuridico .carousel-item::before {
     content: "";
     position: absolute;
-    inset: -15px;
+    inset: -20px;
+    z-index: 0;
 
-    background-image: var(--imagen-fondo);
+    background-image: url("../imagenes/banner1.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
-    filter: blur(15px) brightness(0.7);
-    transform: scale(1.05);
+    filter: blur(18px) brightness(0.65);
+    transform: scale(1.08);
+}
+
+/* Fondos de las tres diapositivas: rutas relativas a css/styles.css */
+#carruselJuridico .carousel-item:nth-child(1)::before {
+    background-image: url("../imagenes/banner1.png");
+}
+#carruselJuridico .carousel-item:nth-child(2)::before {
+    background-image: url("../imagenes/banner2.png");
+}
+#carruselJuridico .carousel-item:nth-child(3)::before {
+    background-image: url("../imagenes/banner3.png");
 }
 
 /* Imagen principal sin recortar */
@@ -684,12 +698,15 @@ footer .redes-sociales a:hover {
     position: relative;
     z-index: 1;
 
-    width: 100%;
+    display: block;
+    width: auto !important;
+    max-width: 100%;
     height: 100%;
 
     object-fit: contain;
-    object-position: center;
+    margin: 0 auto;
 }
+
 
 /* PÁGINA DE CONTACTO */
 
