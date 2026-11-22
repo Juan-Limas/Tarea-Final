@@ -1825,3 +1825,29 @@ img, video { max-width: 100%; }
         padding-left: 8px;
     }
 }
+
+/* EVENTOS EN CELULARES Y TABLETS TÁCTILES */
+
+@media (hover: none) {
+
+    .imagen-evento figcaption {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+
+        inset: auto 0 0;
+        padding: 55px 20px 20px;
+
+        background: linear-gradient(
+            to bottom,
+            transparent,
+            rgba(20, 42, 71, 0.97)
+        );
+
+        pointer-events: none;
+    }
+
+    .imagen-evento img {
+        transform: none;
+    }
+}
