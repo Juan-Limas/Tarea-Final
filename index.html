@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio jurídico Lorem Ipsum</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fontawesome-free-7.0.0-web/css/all.min.css">
+</head>
+<body>
+    <header id="main-header">
+        <!-- Barra fija con botón y logo -->
+        <div class="barra-principal">
+            <button class="boton-menu" type="button" id="botonMenu"
+                    aria-expanded="false" aria-controls="listaMenu">
+                <span class="icono-menu">☰ Menú</span>
+            </button>
+            <div class="logo-barra">
+                <img src="imagenes/logo.png" alt="Estudio Jurídico Lorem Ipsum">
+            </div>
+        </div>
+
+        <!-- Menú debajo de la barra, nunca encima del logo -->
+        <div class="menu-lateral">
+            <nav class="lista-lateral" id="listaMenu" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalMision">Misión y visión</a>
+                <a href="#proyectos">Nuestros proyectos</a>
+                <a href="html/equipo.html">Nuestro equipo</a>
+                <a href="html/contactos.html">Contacto</a>
+                <a href="#eventos">Próximos eventos</a>
+            </nav>
+        </div>
+    </header>
+<main>
+    <!-- Carrusel -->
+    <div id="carruselJuridico" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+            <!-- Imagen 1 -->
+            <div class="carousel-item active" style="--imagen-fondo: url('imagenes/banner1.png')">
+                <img src="imagenes/banner1.png" class="d-block w-100" alt="Presentación del estudio jurídico">
+            </div>
+            <!-- Imagen 2 -->
+            <div class="carousel-item" style="--imagen-fondo: url('imagenes/banner2.png')">
+                <img src="imagenes/banner2.png" class="d-block w-100" alt="Asesoría legal personalizada">
+            </div>
+            <!-- Imagen 3 -->
+            <div class="carousel-item" style="--imagen-fondo: url('imagenes/banner3.png')">
+                <img src="imagenes/banner3.png" class="d-block w-100" alt="Equipo de profesionales del estudio">
+            </div>
+        </div>
+        <!-- Flecha anterior -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselJuridico" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <!-- Flecha siguiente -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselJuridico" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+    </div>
+
+    <!--Sección Nosotros-->
+    <section id="nosotros" class="padded">
+            <div class="container">
+                <h2 class="titulo-seccion">Nosotros</h2>
+                <p>
+                    En el Estudio Jurídico Lorem Ipsum, nos dedicamos
+                    a brindar asesoría y orientación legal en las
+                    áreas de derecho civil, laboral, penal y
+                    administrativo, ofreciendo una atención
+                    personalizada y comprometida con las
+                    necesidades de cada cliente.
+                </p>
+
+                <p>
+                    Creemos que detrás de cada caso existe una
+                    historia que merece ser escuchada. Por ello,
+                    trabajamos con responsabilidad, ética y
+                    dedicación, buscando soluciones legales
+                    adecuadas para cada situación.
+                </p>
+
+                <p>
+                    Nuestro compromiso es construir relaciones
+                    basadas en la confianza, la transparencia
+                    y el respeto, acompañando a nuestros clientes
+                    en cada etapa de sus procedimientos legales.
+                </p>
+
+                <p>
+                    <strong>
+                        Tu tranquilidad y la defensa de tus
+                        derechos son nuestra prioridad.
+                    </strong>
+                </p>
+            </div>
+    </section>
+
+    <!--Mensaje Jurídico-->
+    <aside id="mensaje-juridico" class="padded">
+        <div class="container">
+            <p class="display-1">
+                Defendemos tus <br>
+                <span class="texto-importante">derechos.</span>
+                <br>
+                Protegemos tu <br>
+                <span class="texto-importante">tranquilidad.</span>
+            </p>
+
+            <p class="subtitulo-juridico">
+                Compromiso, confianza y asesoría legal
+                personalizada para acompañarte en cada paso.
+            </p>
+        </div>
+    </aside>
+
+    <!--Sección Proyectos-->
+    <section id="proyectos" class="padded seccion-proyectos">
+        <div class="container">
+            <h2 class="titulo-seccion">Nuestros proyectos</h2>
+            <p class="introduccion-proyectos">
+                En Lorem Ipsum – Estudio Jurídico desarrollamos
+                iniciativas orientadas a la defensa de los derechos,
+                la prevención de conflictos y el acceso a la justicia.
+            </p>
+            <div class="row g-4">
+
+                <!-- PROYECTO 1 -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-proyecto">
+                        <figure>
+                            <img src="imagenes/proyecto1.png" alt="Abogada brindando asesoría legal"
+                                class="img-fluid">
+                        </figure>
+
+                        <div class="contenido-proyecto">
+                            <h3>Asesoría legal comunitaria</h3>
+                            <p>
+                                Promovemos el acceso a la orientación
+                                jurídica mediante iniciativas que
+                                permiten a las personas conocer sus
+                                derechos y recibir información sobre
+                                los mecanismos legales disponibles
+                                para resolver sus conflictos.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROYECTO 2 -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-proyecto">
+                        <figure>
+                            <img src="imagenes/proyecto2.png" alt="Asesoría especializada en derecho laboral"
+                                class="img-fluid">
+                        </figure>
+
+                        <div class="contenido-proyecto">
+                            <h3>Defensa de derechos laborales</h3>
+                            <p>
+                                Desarrollamos acciones de orientación
+                                y acompañamiento jurídico dirigidas
+                                a trabajadores y empleadores, con
+                                especial atención a la prevención
+                                de conflictos laborales y la
+                                protección de los derechos
+                                reconocidos por la ley.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROYECTO 3 -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-proyecto">
+                        <figure>
+                            <img src="imagenes/proyecto3.png" alt="Capacitación sobre derechos y obligaciones legales"
+                                class="img-fluid">
+                        </figure>
+
+                        <div class="contenido-proyecto">
+                            <h3>Educación y prevención legal</h3>
+                            <p>
+                                Impulsamos actividades informativas
+                                sobre derechos y obligaciones en
+                                materias civiles, laborales y
+                                administrativas, fomentando
+                                decisiones responsables y una
+                                cultura de prevención jurídica.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección próximos eventos-->
+    <section id="eventos" class="padded seccion-eventos">
+        <div class="container">
+
+            <h2 class="titulo-seccion">Próximos eventos</h2>
+            <p class="introduccion-eventos">
+                Participa en nuestras actividades de orientación
+                y formación jurídica.
+            </p>
+
+            <div class="row g-4">
+                <!-- EVENTO 1 -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <figure class="imagen-evento">
+                        <img src="imagenes/eventos1.png"
+                            alt="Charla sobre derechos laborales"
+                            class="img-fluid">
+
+                        <figcaption>
+                            <span class="fecha-evento">
+                                10 DIC 2026
+                            </span>
+
+                            <h3>Charla de derechos laborales</h3>
+                            <p>
+                                Conoce tus principales derechos
+                                y obligaciones en el ámbito laboral.
+                            </p>
+                        </figcaption>
+
+                        <button type="button"
+                                class="boton-inscripcion-evento"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalInscripcion"
+                                data-evento="Charla de derechos laborales"
+                                aria-label="Inscribirse a la charla de derechos laborales">
+                        </button>
+                    </figure>
+                </article>
+
+                <!-- EVENTO 2 -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <figure class="imagen-evento">
+
+                        <img src="imagenes/eventos2.png"
+                            alt="Taller sobre contratos civiles"
+                            class="img-fluid">
+
+                        <figcaption>
+                            <span class="fecha-evento">
+                                17 DIC 2026
+                            </span>
+
+                            <h3>Taller de contratos civiles</h3>
+                            <p>
+                                Aprende los aspectos esenciales
+                                para celebrar contratos seguros.
+                            </p>
+                        </figcaption>
+
+                        <button type="button"
+                                class="boton-inscripcion-evento"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalInscripcion"
+                                data-evento="Taller de contratos civiles"
+                                aria-label="Inscribirse al taller de contratos civiles">
+                        </button>
+                    </figure>
+                </article>
+
+            <!-- EVENTO 3 -->
+                <article class="col-12 col-md-6 col-lg-4">
+                    <figure class="imagen-evento">
+
+                        <img src="imagenes/eventos3.png"
+                            alt="Conferencia sobre prevención legal"
+                            class="img-fluid">
+
+                        <figcaption>
+                            <span class="fecha-evento">
+                                14 ENE 2027
+                            </span>
+
+                            <h3>Conferencia de prevención legal</h3>
+                            <p>
+                                Descubre estrategias para prevenir
+                                conflictos y proteger tus derechos.
+                            </p>
+                        </figcaption>
+
+                        <button type="button"
+                                class="boton-inscripcion-evento"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalInscripcion"
+                                data-evento="Conferencia de prevención legal"
+                                aria-label="Inscribirse a la conferencia de prevención legal">
+                        </button>
+                    </figure>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+</main>
+<footer id="main-footer">
+    <div class="container">
+            <div class="copyright">
+            &copy; 2026 Lorem Ipsum. Todos los derechos reservados.
+            </div>      
+        <div class="col redes-sociales">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/inscripciones.js"></script>
+    
+    <!-- MISIÓN Y VISIÓN -->
+    <div class="modal fade"
+        id="modalMision"
+        tabindex="-1"
+        aria-labelledby="tituloModalMision"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+
+            <div class="modal-content modal-juridico">
+
+                <!-- Encabezado -->
+                <div class="modal-header">
+                    <h2 class="modal-title" id="tituloModalMision">
+                        Misión y visión
+                    </h2>
+
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Cerrar">
+                    </button>
+                </div>
+
+                <!-- Video -->
+                <div class="modal-body">
+
+                    <video id="videoMision"
+                        class="video-institucional"
+                        controls
+                        playsinline
+                        preload="metadata">
+
+                        <source src="videos/mision-vision.mp4"
+                                type="video/mp4">
+
+                        Tu navegador no admite videos HTML5.
+                    </video>
+
+                </div>
+
+                <!-- Pie del modal -->
+                <div class="modal-footer">
+                    <p>Lorem Ipsum | Estudio Jurídico</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- INSCRIPCIÓN -->
+    <div class="modal fade"
+        id="modalInscripcion"
+        tabindex="-1"
+        aria-labelledby="tituloInscripcion"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-inscripcion">
+
+                <div class="modal-header">
+                    <h2 class="modal-title" id="tituloInscripcion">
+                        Inscripción al evento
+                    </h2>
+
+                    <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Cerrar">
+                    </button>
+                </div>
+
+                <form id="formInscripcion">
+
+                <div class="modal-body">
+
+                    <h3 id="nombreEvento"></h3>
+
+                    <input type="hidden"
+                        id="eventoSeleccionado"
+                        name="evento">
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label for="nombreAsistente" class="form-label">
+                                Nombre completo
+                            </label>
+
+                            <input type="text"
+                                class="form-control"
+                                id="nombreAsistente"
+                                name="nombre"
+                                placeholder="Tu nombre completo"
+                                required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="correoAsistente" class="form-label">
+                                Correo electrónico
+                            </label>
+
+                            <input type="email"
+                                class="form-control"
+                                id="correoAsistente"
+                                name="correo"
+                                placeholder="ejemplo@correo.com"
+                                required>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">
+                                Modalidad de participación
+                            </label>
+
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                    type="radio"
+                                    name="modalidad"
+                                    id="presencial"
+                                    value="Presencial"
+                                    checked>
+
+                                <label class="form-check-label" for="presencial">
+                                    Presencial
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                    type="radio"
+                                    name="modalidad"
+                                    id="virtual"
+                                    value="Virtual">
+
+                                <label class="form-check-label" for="virtual">
+                                    Virtual
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="horarioEvento" class="form-label">
+                                Horario preferido
+                            </label>
+
+                            <select class="form-select"
+                                    id="horarioEvento"
+                                    name="horario"
+                                    required>
+                                <option value="">
+                                    Selecciona un horario
+                                </option>
+
+                                <option value="09:00">
+                                    9:00 a. m.
+                                </option>
+
+                                <option value="11:00">
+                                    11:00 a. m.
+                                </option>
+
+                                <option value="16:00">
+                                    4:00 p. m.
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="ocupacionAsistente"
+                                class="form-label">
+                                Ocupación
+                            </label>
+
+                            <select class="form-select"
+                                    id="ocupacionAsistente"
+                                    name="ocupacion">
+
+                                <option value="">
+                                    Selecciona una opción
+                                </option>
+                                <option value="Estudiante">
+                                    Estudiante
+                                </option>
+                                <option value="Profesional">
+                                    Profesional
+                                </option>
+                                <option value="Empresario">
+                                    Empresario
+                                </option>
+                                <option value="Otro">
+                                    Otro
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="comentariosEvento" class="form-label">
+                                Comentarios (opcional)
+                            </label>
+
+                            <textarea class="form-control"
+                                    id="comentariosEvento"
+                                    name="comentarios"
+                                    rows="4"
+                                    placeholder="Escribe tus comentarios aquí..."></textarea>
+                        </div>
+
+                    </div>
+
+                    <p id="mensajeInscripcion"
+                    class="mensaje-inscripcion mt-3"
+                    role="status"
+                    aria-live="polite"
+                    hidden>
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cancelar" data-bs-dismiss="modal">
+                        Cancelar
+                    </button>
+
+                    <button type="submit" class="btn btn-inscribirme">
+                        Inscribirme
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

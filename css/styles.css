@@ -1,0 +1,1810 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(fontawesome-free-7.0.0-web/css/all.min.css);
+:root{/* Hace referencia al objeto HTML */
+    /* Sistema de colores RGB, en decimal o hexadecimal */
+    --color-primary: #D2C1B6;
+    --color-secondary: #1B3C53;
+    --color-background: #F9F3EF;
+    --color-surface: #456882;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-claro: #CCCCCC;
+    --color-gris-oscuro: #333333;
+    
+}
+*{/* Con * se seleccionan todos los objetos */
+    box-sizing: border-box;/* Evita que asignarle ancho o alto a un objeto la propiedad
+    padding no incremente el ancho ni el alto respectivamente */
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Urbanist", sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 18px;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+h1{
+    font-size: 64px;
+    font-weight: 200;
+    letter-spacing: -3px;
+}
+h2{
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -2px;/* Espacio entre caracteres */
+    text-transform: lowercase;/* muestra el texto en minúscula */
+}
+h3{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+a{/* estado inicial de vinculo */
+    color: var(--color-surface);
+    text-decoration: none;
+}
+a:hover{/* estado al pasar el puntero del mouse por el vinculo */
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+img{
+    display: block; /* Elimina el espacio por defecto debajo de las imagenes */
+}
+figure{
+    margin: 0;
+    margin-bottom: 8px;
+}
+#top-nav{
+    background-color: var(--color-gris-oscuro);
+}
+#main-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1100;
+}
+
+#main-header p{
+    margin-bottom: 0;
+}
+#header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    max-width: 200px;
+}
+#main-banner{
+    margin-bottom: 0;
+}
+#nosotros{/* Regla de estilos para un objeto por su id empieza con # */
+    background-color: var(--color-background);/* color de fondo */
+}
+#noticias .col{
+    border: solid 1px var(--color-gris-claro);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    transition: all ease-in-out .4s;
+}
+#noticias .col:hover{
+    box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.1);
+    margin-top: -4px;
+}
+#noticias img{
+    border-radius: 8px;
+}
+
+/* FRANJA INSTITUCIONAL */
+
+#mensaje-juridico {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(20, 42, 71, 0.90),
+            rgba(20, 42, 71, 0.55)
+        ),
+        url("../imagenes/abogados-reunion.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+    text-align: left;
+    padding: 85px 0;
+
+    /* EFECTO PARALLAX */
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    color: white;
+}
+
+/* Frase principal */
+#mensaje-juridico .display-1 {
+    font-size: clamp(30px, 4vw, 55px);
+    font-weight: 750;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    text-shadow: none;
+    margin-bottom: 25px;
+}
+
+/* Palabras doradas */
+#mensaje-juridico .texto-importante {
+    color: #c9a354;
+}
+
+/* Texto complementario */
+#mensaje-juridico .subtitulo-juridico {
+    font-size: 18px;
+    max-width: 570px;
+    line-height: 1.7;
+    color: #e2e7ee;
+    margin-bottom: 0;
+}
+
+#empresa{
+    background-color: var(--color-negro);
+    color: var(--color-primary);
+}
+#empresa figure{
+    margin-bottom: 0;
+}
+#historia{
+    background-color: var(--color-surface);
+    color: var(--color-blanco);/* Color de texto */
+}
+#historia a{
+    color: var(--color-negro);
+}
+#historia a:hover{
+    color: var(--color-background);
+    text-decoration: none;
+}
+#cursos .col{
+    border: solid 10px var(--color-primary);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 15px;
+    border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+    border-image-slice: 1;
+}
+
+#eventos{
+    background-color: var(--color-primary);
+    color: var(--color-negro);
+}
+#equipo{
+    background-color: var(--color-background);
+    text-align: center;
+}
+#equipo img{
+    border-radius: 50%;
+}
+#main-footer {
+    background-color: #142a47;
+    color: #ffffff;
+    padding: 8px 20px;
+    margin: 0;
+}
+#page-header{
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    padding: 30px 0;
+}
+
+/* SOCIOS ************************************************/
+
+
+.container{/* Regla de estilos para uno o varios objetos por su clase empieza con . */
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.padded{
+    /* padding es la distancia del borde al contenido */
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.row{
+    display: flex;/* por defecto acomoda los objetos que contiene uno al costado del otro */
+    margin-left: -12px;
+    margin-right: -12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+    /* En conjunto es para que las cajas tengan el mismo ancho  */
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-50{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.col-25{
+    flex-basis: 25%;
+    max-width: 25%;
+}
+.img-fluid{
+    max-width: 100%;/* indica que el ancho máximo del objeto sea igual al de su contenedor */
+}
+.centrado-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.display-1{
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 1em;
+    letter-spacing: -3px;
+    text-shadow: 3px 3px #000000;
+}
+.texto-importante{
+    color: var(--color-primary);
+}
+.menu{
+    list-style: none;/* Elimina las viñetas por defecto de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu li a{
+    display: block;
+}
+.menu-top li a{
+    padding: 8px 16px;
+    color: var(--color-background);
+}
+.menu-top li a:hover{
+    text-decoration: none;
+    background-color: var(--color-secondary);
+}
+.menu-main li a{
+    padding: 30px 15px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.menu-main li a:hover{
+    text-decoration: none;
+    color:var(--color-negro);
+    box-shadow: inset 0 -4px var(--color-primary);
+}
+.imagen-texto{
+    position: relative;
+}
+.imagen-texto figcaption{
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    width: calc(100% - 24px);
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+    opacity: 0;
+    transition: all ease-in-out .5s;
+}
+.imagen-texto figcaption:hover{
+    opacity: 1;
+}
+.redes-sociales{
+    text-align: right;
+}
+.redes-sociales a{
+    color: var(--color-primary);
+    padding: 15px;
+    border: solid 1px;
+    border-radius: 50%;
+    background-color: var(--color-background);
+}
+.redes-sociales a:hover{
+    color: var(--color-gris-oscuro);
+}
+.video-fluid{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+.mapa-fluid{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+}
+.form-group{
+    margin-bottom: .5rem;
+}
+.form-control{
+    width: 100%;
+    border: none;
+    border-bottom: 1px var(--color-primary) solid;
+    padding: 8px;
+    font: inherit;
+    font-size: 0.8em;
+    outline: none;
+}
+.form-control:focus{
+    border-bottom-color:var(--color-surface) ;
+}
+.boton-formulario{
+    border: none;
+    padding: 8px 16px;/* Espaciado interno */
+    font: inherit;/* Permite heredar la fuente y todos sus estilos */
+    font-size: 0.8em;
+    background-color: var(--color-primary);
+    color: var(--color-negro);
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 19px;
+}
+.boton-formulario:hover{
+    border: var(--color-primary) 1px solid;
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 30px;
+    height: 24px;
+    background: linear-gradient(
+        to bottom,
+        #173456 0 3px,
+        transparent 3px 10px,
+        #173456 10px 13px,
+        transparent 13px 20px,
+        #173456 20px 23px
+    );
+}
+.menu-lateral {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    z-index: 1001;
+}
+
+.menu-lateral summary {
+    cursor: pointer;
+    list-style: none;
+    color: #173456;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.menu-lateral summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Distribuir el menú por todo el ancho */
+
+@media (min-width: 992px) {
+
+    .lista-lateral {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .lista-lateral li {
+        flex: 1;
+        min-width: 0;
+        padding: 0;
+        text-align: center;
+        list-style: none;
+    }
+
+    .lista-lateral li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 55px;
+        padding: 10px 8px;
+        white-space: normal;
+        border-left: 2px solid #c9a354;
+        text-decoration: none;
+    }
+
+    .lista-lateral li:first-child a {
+        border-left: none;
+    }
+
+    .lista-lateral li a:hover {
+        background-color: #203d60;
+        color: #d4ae62;
+        transform: none;
+        padding-left: 8px;
+    }
+}
+
+/* Contenedor del menú */
+.menu-lateral {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    z-index: 1001;
+}
+
+/* Botón principal */
+.boton-menu {
+    width: 180px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+
+    background: #142a47;
+    color: white;
+    border: 1px solid #c9a354;
+    border-radius: 6px;
+
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.boton-menu:hover {
+    background: #203d60;
+}
+
+.icono-menu {
+    font-size: 23px;
+    color: #d4ae62;
+}
+
+.flecha-menu {
+    margin-left: auto;
+    color: #d4ae62;
+    transition: transform 0.3s ease;
+}
+
+/* Menú flotante */
+.lista-lateral {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+
+    width: 100%;
+    max-width: none;
+
+    background: #142a47;
+    border: none;
+    border-bottom: 3px solid #c9a354;
+    border-radius: 0;
+
+    padding: 0 12px;
+    margin: 0;
+
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    pointer-events: none;
+
+    transform: none;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        padding 0.3s ease,
+        visibility 0.3s ease;
+}
+
+/* Menú abierto */
+.menu-lateral.abierto .lista-lateral {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+    padding: 8px 12px;
+    pointer-events: auto;
+}
+
+/* Girar flecha al abrir */
+.menu-lateral.abierto .flecha-menu {
+    transform: rotate(180deg);
+}
+
+/* Enlaces */
+.lista-lateral a {
+    display: block;
+    padding: 8px 12px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    border-left: 3px solid #c9a354;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.lista-lateral a:hover {
+    background: #203d60;
+    color: #d4ae62;
+    padding-left: 12px;
+    transform: translateY(-2px);
+}
+
+/* Fondo oscuro detrás del menú */
+.fondo-oscuro {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+
+    z-index: 1000;
+}
+
+/* Mostrar fondo al abrir menú */
+.fondo-oscuro.activo {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/*Botones circulares*/
+
+
+footer .redes-sociales i {
+    font-size: 14px;
+}
+
+/* FOOTER PRINCIPAL */
+
+/* Contenedor interior */
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Texto */
+footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Redes sociales */
+footer .redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Círculos */
+footer .redes-sociales a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+
+    background: transparent;
+    color: #d4ae62;
+    border: 1px solid #c9a354;
+    border-radius: 50%;
+
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Íconos */
+footer .redes-sociales i {
+    font-size: 16px;
+}
+
+/* Animación */
+footer .redes-sociales a:hover {
+    background-color: #c9a354;
+    color: #142a47;
+    transform: translateY(-4px);
+}
+
+/* Carrusel del estudio jurídico */
+#carruselJuridico {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+#carruselJuridico .carousel-item {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+}
+
+/* Fondo ampliado que cubre los lados */
+#carruselJuridico .carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+
+    background-image: var(--imagen-fondo);
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(15px) brightness(0.7);
+    transform: scale(1.05);
+}
+
+/* Imagen principal sin recortar */
+#carruselJuridico .carousel-item img {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+/* PÁGINA DE CONTACTO */
+
+.pagina-contacto {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f3f5f8, #e1e7ee);
+    font-family: "Urbanist", sans-serif;
+}
+
+/* Enlace para volver */
+.cabecera-contacto {
+    padding: 25px 5%;
+}
+
+.volver-inicio {
+    color: #142a47;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.volver-inicio:hover {
+    color: #b18b43;
+}
+
+/* Contenedor principal */
+.contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px 60px;
+}
+
+/* Tarjeta de dos columnas */
+.tarjeta-contacto {
+    display: grid;
+    grid-template-columns: 36% 64%;
+    width: 100%;
+    max-width: 1050px;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 18px 50px rgba(20,42,71,0.15);
+}
+
+/* Panel izquierdo */
+.contacto-informacion {
+    background: linear-gradient(160deg, #142a47, #203d60);
+    color: #ffffff;
+    padding: 55px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.simbolo-justicia {
+    font-size: 55px;
+    color: #c9a354;
+    margin-bottom: 18px;
+}
+
+.contacto-informacion h1 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.contacto-informacion p {
+    font-size: 15px;
+    color: #e1e7ef;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.linea-dorada {
+    width: 65px;
+    height: 3px;
+    background: #c9a354;
+    margin: 20px 0 28px;
+}
+
+/* Panel derecho */
+.contacto-formulario {
+    background-color: #ffffff;
+    padding: 45px 40px;
+    border: 1px solid #142a47;
+    border-radius: 0 14px 14px 0;
+}
+
+.contacto-formulario h2 {
+    color: #142a47;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+
+    margin: 0 0 20px;
+    padding-bottom: 15px;
+
+    position: relative;
+}
+
+/* Línea dorada debajo del título */
+.contacto-formulario h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 65px;
+    height: 3px;
+
+    background-color: #c9a354;
+    border-radius: 3px;
+}
+
+.contacto-formulario > p {
+    color: #697586;
+    font-size: 15px;
+    margin-bottom: 28px;
+}
+
+/* Campos */
+.campo-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.campo-contacto label {
+    color: #142a47;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.campo-contacto input,
+.campo-contacto textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d6dce5;
+    border-radius: 8px;
+    background: #fafbfc;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    resize: vertical;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Efecto al seleccionar un campo */
+.campo-contacto input:focus,
+.campo-contacto textarea:focus {
+    border-color: #c9a354;
+    box-shadow: 0 0 0 3px rgba(201,163,84,0.18);
+}
+
+/* Botón de envío */
+.boton-enviar {
+    display: block;
+    width: fit-content;
+    min-width: 170px;
+    margin: 25px auto 0;
+    padding: 12px 25px;
+    background-color: #c9a354;
+    color: #142a47;
+    border: none;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #dfbd78;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(20, 42, 71, 0.18);
+}
+
+/* Contenedor del botón */
+.menu-lateral {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    z-index: 1001;
+}
+
+/* Mantener el botón compacto */
+.boton-menu {
+    width: 200px;
+}
+
+/* Menú horizontal flotante */
+.lista-lateral {
+    position: static;
+    width: 100%;
+    max-width: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+
+    background-color: #142a47;
+    border: none;
+    border-bottom: 3px solid #c9a354;
+    border-radius: 0;
+
+    margin: 0;
+    padding: 0 12px;
+
+    /* Inicialmente cerrado */
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+
+    transform: none;
+    pointer-events: none;
+
+    transition:
+        max-height 0.45s ease,
+        opacity 0.35s ease,
+        visibility 0.35s ease,
+        padding 0.35s ease;
+}
+
+/* Enlaces horizontales */
+.lista-lateral a {
+    display: block;
+    white-space: nowrap;
+    color: #ffffff;
+
+    padding: 7px 12px;
+    font-size: 14px;
+    text-decoration: none;
+
+    border-left: 3px solid #c9a354;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+/* Animación */
+.lista-lateral a:hover {
+    background-color: #203d60;
+    color: #d4ae62;
+    padding-left: 12px;
+    transform: translateY(-3px);
+}
+
+/* Títulos de las secciones */
+.titulo-seccion {
+    color: #142a47;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+
+    position: relative;
+    display: block;
+    width: fit-content;
+
+    margin: 0 0 25px;
+    padding-bottom: 15px;
+}
+
+/* Línea dorada debajo del título */
+.titulo-seccion::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 65px;
+    height: 3px;
+    background-color: #c9a354;
+    border-radius: 3px;
+}
+
+/* Barra que contiene menú y logo */
+.barra-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    width: 100%;
+    min-height: 95px;
+    padding: 12px 24px;
+}
+
+/* Mantener el botón a la izquierda */
+.barra-principal .boton-menu {
+    width: 190px;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+/* Centrar el logo */
+.logo-barra {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Tamaño del logo */
+.logo-barra img {
+    display: block;
+    width: 210px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ventana institucional */
+.modal-juridico {
+    background-color: #ffffff;
+    border: 2px solid #c9a354;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Encabezado blanco */
+.modal-juridico .modal-header {
+    background-color: #ffffff;
+    border-bottom: none;
+    padding: 25px 24px 15px;
+}
+
+/* Título azul marino */
+.modal-juridico .modal-title {
+    color: #142a47;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+/* Línea dorada */
+.modal-juridico .modal-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 3px;
+    background-color: #c9a354;
+}
+
+/* Video */
+.modal-juridico .modal-body {
+    background-color: #ffffff;
+    padding: 15px 24px;
+}
+
+.modal-juridico .video-institucional {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    background-color: #142a47;
+}
+
+/* Pie azul marino */
+.modal-juridico .modal-footer {
+    background-color: #142a47;
+    border-top: 3px solid #c9a354;
+    justify-content: center;
+    padding: 14px;
+}
+
+.modal-juridico .modal-footer p {
+    color: #d4ae62;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Modal por encima del encabezado */
+.modal {
+    z-index: 2000;
+}
+
+.modal-backdrop {
+    z-index: 1990;
+}
+
+/* Centrar la ventana correctamente */
+#modalMision .modal-dialog {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+}
+
+/* Título y línea dorada */
+#modalMision .modal-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #142a47;
+    text-transform: none;
+    letter-spacing: 0;
+    padding-bottom: 14px;
+    position: relative;
+}
+
+#modalMision .modal-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 3px;
+    background-color: #c9a354;
+}
+
+#modalMision .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #142a47;
+    border-top: 3px solid #c9a354;
+    padding: 12px 24px;
+}
+
+#modalMision .modal-footer p {
+    margin: 0;
+    color: #d4ae62;
+    font-size: 14px;
+    text-align: right;
+}
+
+/* SECCIÓN NUESTROS PROYECTOS */
+
+.seccion-proyectos {
+    background-color: #f7f8fa;
+    padding: 70px 0;
+}
+
+/* Texto introductorio */
+.introduccion-proyectos {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 25px 0 35px;
+}
+
+/* Tarjetas */
+.tarjeta-proyecto {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-bottom: 4px solid #c9a354;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.tarjeta-proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(20, 42, 71, 0.18);
+}
+
+/* Imágenes */
+.tarjeta-proyecto figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+.tarjeta-proyecto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.tarjeta-proyecto:hover img {
+    transform: scale(1.06);
+}
+
+/* Contenido */
+.contenido-proyecto {
+    padding: 25px;
+}
+
+.contenido-proyecto h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #142a47;
+    margin-bottom: 15px;
+}
+
+.contenido-proyecto p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555555;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+/* Hacer que "Nuestros proyectos" sea responsivo */
+@media (max-width: 768px) {
+    .seccion-proyectos {
+        padding: 45px 0;
+    }
+
+    .tarjeta-proyecto img {
+        height: 200px;
+    }
+
+    .contenido-proyecto {
+        padding: 20px;
+    }
+}
+
+/* TARJETAS DE EVENTOS */
+
+.imagen-evento {
+    position: relative;
+    height: 350px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border-bottom: 4px solid #c9a354;
+}
+
+/* Imagen visible inicialmente */
+.imagen-evento img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Capa oculta inicialmente */
+.imagen-evento figcaption {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 25px;
+    background-color: rgba(20, 42, 71, 0.92);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.4s ease,
+        visibility 0.4s ease,
+        transform 0.4s ease;
+}
+
+/* Mostrar texto al pasar el cursor */
+.imagen-evento:hover figcaption,
+.imagen-evento:focus-within figcaption {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Zoom suave de la fotografía */
+.imagen-evento:hover img {
+    transform: scale(1.07);
+}
+
+/* Fecha */
+.imagen-evento .fecha-evento {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    background-color: #c9a354;
+    color: #142a47;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Título */
+.imagen-evento h3 {
+    color: #c9a354;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Descripción */
+.imagen-evento p {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* SECCIÓN NUESTRO EQUIPO */
+
+.seccion-equipo {
+    padding: 75px 0;
+    background-color: #f7f8fa;
+}
+
+.introduccion-equipo {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 25px 0 35px;
+}
+
+/* Tarjetas */
+.tarjeta-equipo {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    border-bottom: 4px solid #c9a354;
+
+    box-shadow: 0 5px 15px rgba(20, 42, 71, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Imagen */
+.foto-equipo {
+    overflow: hidden;
+}
+
+.foto-equipo img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.5s ease;
+}
+
+/* Información */
+.informacion-equipo {
+    padding: 20px 12px;
+    text-align: center;
+}
+
+.informacion-equipo h3 {
+    color: #142a47;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: none;
+}
+
+.informacion-equipo p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Efectos hover */
+.tarjeta-equipo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(20, 42, 71, 0.20);
+}
+
+.tarjeta-equipo:hover img {
+    transform: scale(1.07);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .seccion-equipo {
+        padding: 45px 0;
+    }
+
+    .foto-equipo img {
+        height: 270px;
+    }
+}
+
+/* Toda la tarjeta del evento es clicable */
+.boton-inscripcion-evento {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.imagen-evento:focus-within {
+    outline: 3px solid #c9a354;
+    outline-offset: 3px;
+}
+
+.imagen-evento figcaption {
+    pointer-events: none;
+}
+
+/* MODAL DE INSCRIPCIÓN */
+
+.modal-inscripcion {
+    border: 3px solid #c9a354;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Encabezado */
+.modal-inscripcion .modal-header {
+    background-color: #142a47;
+    border-bottom: 3px solid #c9a354;
+    padding: 20px 25px;
+}
+
+.modal-inscripcion .modal-title {
+    color: white;
+    font-size: 25px;
+    text-transform: none;
+}
+
+/* Cuerpo */
+.modal-inscripcion .modal-body {
+    background-color: white;
+    padding: 25px;
+}
+
+.modal-inscripcion #nombreEvento {
+    color: #142a47;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.modal-inscripcion .form-label {
+    color: #142a47;
+    font-weight: 600;
+}
+
+.modal-inscripcion .form-control:focus,
+.modal-inscripcion .form-select:focus {
+    border-color: #c9a354;
+    box-shadow: 0 0 0 3px rgba(201, 163, 84, 0.2);
+}
+
+.modal-inscripcion .form-check-input:checked {
+    background-color: #142a47;
+    border-color: #142a47;
+}
+
+/* Pie */
+.modal-inscripcion .modal-footer {
+    background-color: #142a47;
+    border-top: 3px solid #c9a354;
+    justify-content: flex-end;
+    padding: 15px 25px;
+}
+
+/* Botones */
+.modal-inscripcion .btn-inscribirme {
+    background-color: #c9a354;
+    color: #142a47;
+    font-weight: bold;
+}
+
+.modal-inscripcion .btn-inscribirme:hover {
+    background-color: #e0bd74;
+    color: #142a47;
+}
+
+.modal-inscripcion .btn-cancelar {
+    color: white;
+    border: 1px solid white;
+}
+
+.mensaje-inscripcion {
+    color: #142a47;
+    font-size: 14px;
+}
+
+/* NOMBRE Y CORREO: ESTILO SUBRAYADO */
+
+#modalInscripcion #nombreAsistente,
+#modalInscripcion #correoAsistente {
+    border: none;
+    border-bottom: 2px solid #c9a354;
+    border-radius: 0;
+
+    background-color: transparent;
+    box-shadow: none;
+
+    padding: 10px 4px;
+    color: #142a47;
+
+    transition: border-color 0.3s ease;
+}
+
+/* Al escribir */
+#modalInscripcion #nombreAsistente:focus,
+#modalInscripcion #correoAsistente:focus {
+    outline: none;
+    border-bottom: 2px solid #142a47;
+    box-shadow: none;
+}
+
+/* CAMPO DE COMENTARIOS */
+
+#modalInscripcion #comentariosEvento {
+    width: 100%;
+    min-height: 120px;
+
+    padding: 12px 15px;
+
+    text-align: left;
+    vertical-align: top;
+
+    border: 1px solid #c9a354;
+    border-radius: 6px;
+
+    resize: vertical;
+    line-height: 1.6;
+}
+
+#modalInscripcion #comentariosEvento:focus {
+    outline: none;
+    border-color: #142a47;
+    box-shadow: 0 0 0 2px rgba(201, 163, 84, 0.2);
+}
+
+/* ========================================================
+ADAPTACIÓN RESPONSIVA: escritorio, tablet y celular
+Reglas al final para prevalecer sobre estilos anteriores.
+   ======================================================== */
+html {
+    scroll-padding-top: 105px;
+}
+body {
+    min-width: 0;
+    overflow-x: clip;
+}
+img, video { max-width: 100%; }
+
+/* Encabezado: logo independiente del menú desplegable */
+#main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    width: 100%;
+    background: #fff;
+}
+#main-header .barra-principal {
+    width: 100%;
+    min-height: 86px;
+    padding: 10px 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#main-header .logo-barra {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+#main-header .logo-barra img { width: min(210px, 32vw); height: auto; }
+#main-header .menu-lateral {
+    position: static;
+    width: 100%;
+    margin: 0;
+}
+#main-header .lista-lateral {
+    position: static;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 5px 9px;
+    padding: 0 12px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background: #142a47;
+    border-bottom: 0 solid #c9a354;
+    transition: max-height .35s ease, padding .35s ease, opacity .2s ease, visibility .2s ease;
+}
+#main-header .menu-lateral.abierto .lista-lateral {
+    max-height: min(65vh, 520px);
+    overflow-y: auto;
+    padding: 12px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    border-bottom-width: 3px;
+}
+#main-header .lista-lateral a {
+    white-space: normal;
+    align-content: center;
+    font-size: 14px;
+    line-height: 1.35;
+}
+#main-header .lista-lateral a:focus-visible,
+#main-header .boton-menu:focus-visible {
+    outline: 3px solid #c9a354;
+    outline-offset: 2px;
+}
+
+/* Ajustes de tarjetas y del footer */
+.seccion-proyectos .row > article,
+.seccion-eventos .row > article { display: flex; }
+.seccion-proyectos .tarjeta-proyecto,
+.seccion-eventos .imagen-evento { width: 100%; }
+#main-footer .container { flex-wrap: wrap; }
+#main-footer .copyright { font-size: 14px; }
+
+
+/* Tablets: menú en varias filas y dos tarjetas por fila */
+@media (max-width: 991.98px) {
+    #main-header .barra-principal { min-height: 76px; padding: 9px 18px; }
+    #main-header .barra-principal .boton-menu { width: 150px; padding: 10px 12px; }
+    #main-header .icono-menu { font-size: 19px; }
+    #main-header .logo-barra img { width: 165px; }
+    #main-header .lista-lateral { justify-content: center; }
+    #main-header .lista-lateral a { font-size: 14px; }
+    .padded { padding-top: 55px; padding-bottom: 55px; }
+    .titulo-seccion { font-size: 29px; }
+    #mensaje-juridico { padding: 65px 0; }
+    #mensaje-juridico .display-1 { font-size: clamp(30px, 5vw, 47px); }
+    #carruselJuridico, #carruselJuridico .carousel-item { height: 220px; }
+    .tarjeta-contacto { grid-template-columns: 40% 60%; }
+    .contacto-informacion { padding: 35px 25px; }
+    .contacto-formulario { padding: 35px 25px; }
+}
+
+/* Celulares: logo a la derecha, menú desplegable vertical */
+@media (max-width: 575.98px) {
+    html { scroll-padding-top: 76px; }
+    body { font-size: 16px; }
+    #main-header .barra-principal {
+        min-height: 70px;
+        padding: 9px 14px;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    #main-header .barra-principal .boton-menu {
+        width: auto;
+        min-width: 108px;
+        padding: 9px 12px;
+        margin: 0;
+    }
+    #main-header .icono-menu { font-size: 17px; }
+    #main-header .logo-barra {
+        position: static;
+        transform: none;
+        margin-left: auto;
+        min-width: 0;
+    }
+    #main-header .logo-barra img { width: min(150px, 43vw); }
+    #main-header .lista-lateral {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        gap: 2px;
+    }
+    #main-header .menu-lateral.abierto .lista-lateral {
+        max-height: min(70vh, 470px);
+        padding: 8px 12px;
+    }
+    #main-header .lista-lateral a { width: 100%; padding: 10px 12px; }
+
+    #carruselJuridico, #carruselJuridico .carousel-item { height: 175px; }
+    #carruselJuridico .carousel-item::before { inset: -8px; filter: blur(9px) brightness(.65); }
+    #carruselJuridico .carousel-control-prev,
+    #carruselJuridico .carousel-control-next { width: 12%; }
+    .padded, .seccion-proyectos, .seccion-eventos { padding-top: 42px; padding-bottom: 42px; }
+    .titulo-seccion { font-size: 27px; line-height: 1.18; }
+    .introduccion-proyectos, .introduccion-eventos { font-size: 15px; }
+    #mensaje-juridico { padding: 60px 0; background-attachment: scroll; }
+    #mensaje-juridico .display-1 { font-size: clamp(30px, 8vw, 42px); letter-spacing: -1px; line-height: 1.12; }
+    #mensaje-juridico .subtitulo-juridico { font-size: 15px; }
+    .tarjeta-proyecto img { height: 215px; }
+    .contenido-proyecto { padding: 20px; }
+    .contenido-proyecto h3 { font-size: 19px; }
+    .contenido-proyecto p { font-size: 14px; text-align: left; }
+    .imagen-evento { height: 330px; }
+    .imagen-evento h3 { font-size: 20px; }
+    .imagen-evento figcaption { padding: 18px; }
+
+    #main-footer { padding: 18px 12px; }
+    #main-footer .container { flex-direction: column; align-items: center; gap: 17px; }
+    #main-footer .copyright { text-align: center; }
+    #main-footer .redes-sociales { justify-content: center; flex-wrap: wrap; }
+
+    /* Ventanas emergentes utilizables en pantallas pequeñas */
+    #modalMision .modal-dialog,
+    #modalInscripcion .modal-dialog { margin: 8px; }
+    #modalMision .modal-header,
+    #modalInscripcion .modal-header { padding: 14px 16px; }
+    #modalMision .modal-title,
+    #modalInscripcion .modal-title { font-size: 21px; }
+    #modalMision .modal-body,
+    #modalInscripcion .modal-body { padding: 12px 16px; }
+    #modalInscripcion #nombreEvento { font-size: 18px; margin-bottom: 15px; }
+    #modalInscripcion .modal-footer { padding: 12px 16px; }
+
+    /* Página independiente de contacto */
+    .contenedor-contacto { padding: 15px 12px 35px; }
+    .tarjeta-contacto { grid-template-columns: 1fr; }
+    .contacto-informacion { padding: 28px 24px; }
+    .contacto-formulario { padding: 28px 24px; border-radius: 0; }
+    .contacto-informacion h1 { font-size: 27px; }
+    .contacto-formulario h2 { font-size: 27px; }
+}
+
+/* Pantallas táctiles: el texto informativo siempre visible */
+@media (hover: none) {
+    .imagen-evento figcaption {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        inset: auto 0 0;
+        padding: 55px 18px 18px;
+        background: linear-gradient(transparent, rgba(20, 42, 71, .96));
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .imagen-evento img, .tarjeta-proyecto img,
+    .tarjeta-proyecto, .imagen-evento figcaption { transition: none; }
+}
+
+/* MENÚ A TODO EL ANCHO EN COMPUTADORAS */
+
+@media (min-width: 992px) {
+
+    #main-header .lista-lateral {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: stretch;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Para menús que usan elementos li */
+    #main-header .lista-lateral li {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    /* Para enlaces directos o dentro de li */
+    #main-header .lista-lateral > a,
+    #main-header .lista-lateral li a {
+        display: flex;
+        flex: 1 1 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-width: 0;
+        min-height: 55px;
+
+        padding: 10px 8px;
+        margin: 0;
+
+        border-left: 2px solid #c9a354;
+
+        color: white;
+        text-align: center;
+        white-space: normal;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    #main-header .lista-lateral > a:first-child,
+    #main-header .lista-lateral li:first-child a {
+        border-left: none;
+    }
+
+    #main-header .lista-lateral > a:hover,
+    #main-header .lista-lateral li a:hover {
+        background-color: #203d60;
+        color: #d4ae62;
+        transform: none;
+        padding-left: 8px;
+    }
+}
